@@ -7,7 +7,7 @@ const Itenary = () => {
 	const { id } = useParams();
 	const [details, setDetails] = useState(null);
 	useEffect(() => {
-		fetch(`http://localhost:8000/itenaryList/` + id)
+		fetch(`http://localhost:8000/itenaryList/${id}`)
 			.then((res) => {
 				return res.json();
 			})
@@ -15,8 +15,6 @@ const Itenary = () => {
 				setDetails(data);
 			});
 	}, []);
-
-	console.log(details);
 	return (
 		<div className="mx-5">
 			{details ? (
