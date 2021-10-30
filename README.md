@@ -6,6 +6,7 @@
 
 - Adding data to array from another components
 - maintaining the state of the components when you add or delete new data
+- failed to build the project on Netlify
 
 ## Findings
 
@@ -26,8 +27,6 @@
 # 4. Your source code files plus the final (e.g. compiled) result that can be opened directly in a browser
 
 [Link To Repository](https://github.com/PrinceNiyonshuti/itenary-tracker-v2)
-
-[Link To Deploy App on Netlify](https://zatec-countries.netlify.app/)
 
 # 5. Documentation of your code where necessary
 
