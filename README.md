@@ -1,70 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 1. Problems and findings
 
-## Available Scripts
+## Problems
+- Adding data to array from another components
+- maintaining the state of the components when you add or delete new data
 
-In the project directory, you can run:
+## Findings
+- React useEffect to handle data before data loads to the DOM and after it loads
+- using Json Server to hold data to be used while fetching them like an API
+- using Reach history to reload or push to a new route using the history prop
+- handling and mastering use of the state and conditional rendering 
 
-### `yarn start`
+# 2. Time Taken to Complete
+ - its been 5 to 7 hours working on the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 3. Your coding style and standards
+   - the coding style is used was line coding and error control and 
+    the standard of using safe ,secure and portable codes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 4. Your source code files plus the final (e.g. compiled) result that can be opened directly in a browser
 
-### `yarn test`
+[Link To Repository](https://github.com/PrinceNiyonshuti/itenary-tracker-v2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Link To Deploy App on Netlify](https://zatec-countries.netlify.app/)
 
-### `yarn build`
+# 5. Documentation of your code where necessary
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+before running the project first initialize the project to get tailwindcss modules , using the steps below
+  ### steps to follow installing the project 
+    npx install
+  ### to run the project 
+    npx start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 6. Used resources and documentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Resources 
+- Json Server
+- React Router Dom
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Documentation
+### To Run Json Server [to run the json data and watch the array data]()
+    1. json-server --watch data/db.json --port 8000 
