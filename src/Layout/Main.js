@@ -18,10 +18,10 @@ const Main = () => {
 
 	// Remove Itenary
 	const deleteItenary = (ItenaryId) => {
-		const filteredItenaries = itenaryData.filter(
+		const newItenaries = itenaryData.filter(
 			(itenary) => itenary.id !== ItenaryId
 		);
-		setItenaryData(filteredItenaries);
+		setItenaryData(newItenaries);
 
 		// const deleteItenerary = fetch(
 		// 	`http://localhost:8000/itenaryList/` + ItenaryId,
