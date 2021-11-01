@@ -23,7 +23,7 @@ const Main = () => {
 		);
 		setItenaryData(filteredItenaries);
 
-		// const filteredItenaries = fetch(
+		// const deleteItenerary = fetch(
 		// 	`http://localhost:8000/itenaryList/` + ItenaryId,
 		// 	{
 		// 		method: "DELETE",

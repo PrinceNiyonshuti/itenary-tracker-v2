@@ -1,20 +1,6 @@
 {
   "itenaryList": [
     {
-      "title": "sadasd",
-      "date": "2021-11-02",
-      "time": "19:48",
-      "description": "sadasdasd",
-      "id": 1
-    },
-    {
-      "title": "new data",
-      "date": "2021-11-03",
-      "time": "20:18",
-      "description": "dasdasdas",
-      "id": 2
-    },
-    {
       "title": "New Itenary 3",
       "date": "2021-11-01",
       "time": "12:32",

@@ -7,13 +7,14 @@ const Itenary = () => {
 	const { id } = useParams();
 	const [details, setDetails] = useState(null);
 	useEffect(() => {
-		fetch(`http://localhost:8000/itenaryList/${id}`)
+		fetch(`http://localhost:8000/itenaryList/` + id)
 			.then((res) => {
 				return res.json();
 			})
 			.then((data) => {
 				setDetails(data);
 			});
+		// eslint-disable-next-line
 	}, []);
 	return (
 		<div className="mx-5">
