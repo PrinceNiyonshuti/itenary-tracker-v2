@@ -18,22 +18,22 @@ const Main = () => {
 
 	// Remove Itenary
 	const deleteItenary = (ItenaryId) => {
-		const newItenaries = itenaryData.filter(
-			(itenary) => itenary.id !== ItenaryId
-		);
-		setItenaryData(newItenaries);
+		// const newItenaries = itenaryData.filter(
+		// 	(itenary) => itenary.id !== ItenaryId
+		// );
+		// setItenaryData(newItenaries);
 
-		// const deleteItenerary = fetch(
-		// 	`http://localhost:8000/itenaryList/` + ItenaryId,
-		// 	{
-		// 		method: "DELETE",
-		// 	}
-		// ).then(() => {
-		// 	console.log("Itenary Deleted");
-		// 	history.push("/");
-		// });
+		const deleteItenerary = fetch(
+			`http://localhost:8000/itenaryList/` + ItenaryId,
+			{
+				method: "DELETE",
+			}
+		).then(() => {
+			console.log("Itenary Deleted");
+			window.location.reload();
+		});
 
-		// setItenaryData(...itenaryData,filteredItenaries);
+		setItenaryData(...itenaryData, deleteItenerary);
 	};
 	return (
 		<div>
