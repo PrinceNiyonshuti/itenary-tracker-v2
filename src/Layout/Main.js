@@ -6,6 +6,7 @@ import Itenaries from "../Components/Itenaries";
 const Main = () => {
 	const [itenaryData, setItenaryData] = useState(null);
 
+	// Retrieve all Itenerary
 	useEffect(() => {
 		fetch(`http://localhost:8000/itenaryList`)
 			.then((res) => {
@@ -16,24 +17,24 @@ const Main = () => {
 			});
 	}, []);
 
-	// Remove Itenary
+	// Remove Itenerary
 	const deleteItenary = (ItenaryId) => {
-		// const newItenaries = itenaryData.filter(
-		// 	(itenary) => itenary.id !== ItenaryId
-		// );
-		// setItenaryData(newItenaries);
+		const newItenaries = itenaryData.filter(
+			(itenary) => itenary.id !== ItenaryId
+		);
+		setItenaryData(newItenaries);
 
-		const deleteItenerary = fetch(
-			`http://localhost:8000/itenaryList/` + ItenaryId,
-			{
-				method: "DELETE",
-			}
-		).then(() => {
-			console.log("Itenary Deleted");
-			window.location.reload();
-		});
+		// const deleteItenerary = fetch(
+		// 	`http://localhost:8000/itenaryList/` + ItenaryId,
+		// 	{
+		// 		method: "DELETE",
+		// 	}
+		// ).then(() => {
+		// 	console.log("Itenary Deleted");
+		// 	window.location.reload();
+		// });
 
-		setItenaryData(...itenaryData, deleteItenerary);
+		// setItenaryData(...itenaryData, deleteItenerary);
 	};
 	return (
 		<div>
