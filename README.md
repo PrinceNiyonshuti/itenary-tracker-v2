@@ -1,5 +1,7 @@
 # Itineray Tracker
 
+Itinerary project to read and add your daily itineraries and remove them anytime wanted
+
 # 1. Problems and findings
 
 ## Problems
